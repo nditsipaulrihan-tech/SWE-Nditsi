@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" 
+  content="Heritage University - Excellence in Computer Engineering Education"
+  />
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Heritage University | Register</title>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="#">
+      <a href="../index.html">
+        <span>Heritage University</span>
+      </a>
+    </div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="staff.html">Staff</a>
+      <a href="results.html">Results</a>
+      <a href="register.html" target="_blank" rel="noonpener noreferrer">Register</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Form -->
+     <h1>Student Registration Form</h1>
+     <p>Complete the form below to apply for admission to <b>Heritage University</b>. All fields marked required (*) must be field in.</p>
+
+     <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name"><b>Full Name *</b></label><br>
+        <input type="text" id="name" class="input" name="name" placeholder="e.g Alice Mbanga" required><br>
+        <label for="email"><b>Email Address *</b></label><br>
+        <input type="email" id="email" class="input" name="email" placeholder="your@email.com" required><br>
+        <label for="password"><b>Create Password *</b></label><br>
+        <input type="password" id="password" class="input" name="password" placeholder="At least 8 characters" required><br>
+        <label for="phone"><b>Phone Number *</b></label><br>
+        <input type="tel" id="phone" class="input" name="phone" placeholder="+237 6XX XXX XXX" required><br>
+        <label for="dob"><b>Date of Birth *</b></label><br>
+        <input type="date" id="dob" class="input" name="dob" required><br>
+        <label for="age"><b>Age *</b></label><br>
+        <input type="number" id="age" class="input" name="age" placeholder="Your age" required><br>
+
+        <label for="gender"><b>Gender *</b></label><br>
+        <input type="checkbox" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="checkbox" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="checkbox" id="prefer_not_to_say" name="gender" value="prefer_not_to_say">
+        <label for="prefer_not_to_say">Prefer not to say</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Academic Information</legend>
+        <label for="program"><b>Program of Interest *</b></label><br>
+        <select id="program" name="program" required>
+          <option value="">-- Select a program --</option>
+          <option value="computer_engineering">Computer Engineering</option>
+          <option value="software_engineering">Software Engineering</option>
+          <option value="cybersecurity">Cybersecurity</option>
+          <option value="data_science">Data Science</option>
+        </select><br>
+        <label for="entry"><b>Entry *</b></label><br>
+        <select name="entry" id="entry" required>
+          <option value="">-- Select entry type --</option>
+          <option value="freshman">Freshman</option>
+          <option value="transfer">Transfer</option>
+        </select><br>
+        <label for="previous_education"><b>Previous Education</b></label><br>
+        <input type="text" id="previous_education" class="input" name="previous_education" placeholder="Name of your previous school"><br>
+        <label for="gce_year"><b></b>GCE A-Level Year</b></label><br>
+        <input type="number" id="gce_year" class="input" name="gce_year" placeholder="e.g 2024" required><br>
+        <label for="gce_results"><b>GCE A-Level Subjects Passed</b></label><br>
+        <input type="checkbox" name="gce_results" id="mathematics"><label for="mathematics"><b>Mathematics</b></label><br>
+        <input type="checkbox" name="gce_results" id="physics"><label for="physics"><b>Physics</b></label><br>
+        <input type="checkbox" name="gce_results" id="chemistry"><label for="chemistry"><b>Chemistry</b></label><br>
+        <input type="checkbox" name="gce_results" id="further_mathematics"><label for="further_mathematics"><b>Further Mathematics</b></label><br>
+        <input type="checkbox" name="gce_results" id="computer_science"><label for="computer_science"><b>Computer Science</b></label><br>
+      </fieldset>
+
+      <fieldset>
+
+        <legend>Additional Information</legend>
+
+        <label for="computer_skills"><b>Computer Skill Level (1=Beginner, 10=Expert)</b></label><br>
+        <input type="range" name="computer_skills" id="computer_skills" class="input" min="1" max="10"><br>
+        
+        <label for="portfolio"><b>Portfolio Link or LinkedIn URL</b></label><br>
+        <input type="url" id="portfolio" class="input" name="portfolio" placeholder="https://..."><br>
+        
+        <label for="passport_photo"><b>Passport Photo</b></label><br>
+        <input type="file" id="passport_photo" class="input" name="passport_photo" accept="image/*" required>
+        <p><small>Accepted formats: JPG, PNG. Max size: 2MB</small></p>
+        
+        <label for="favorite_colour"><b>Favorite Colour (fun question)</b></label><br>
+        <input type="color" id="favorite_colour" class="input" name="favorite_colour"><br>
+        
+        <label for="motivation_statement"><b>Motivation Statement *</b></label><br>
+        <textarea id="motivation_statement" name="motivation_statement" rows="7" placeholder="In 100-200 words, explain why you want to study at Heritage University and what you hope to achieve..." required></textarea><br>
+        
+        <input type="checkbox" name="terms" id="terms" required>
+        <label for="terms">I agree to the <a href="#" target="_blank" rel="noopener noreferrer">Terms and Conditions</a> and <a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>. *</label>
+      </fieldset>
+      
+      <button type="submit" class="submit">Submit Application</button><button type="reset" class="reset">Clear Form</button>
+     </form>
+
+     <!-- Admissions -->
+      <section class="section">
+      <h3>Admissions Requirements</h3>
+      <ul>
+        <li>GCE A-Level certificate</li>
+        <li>Minimum 2 A-Level passes</li>
+        <li>Science subjects prefered</li>
+        <li>Valid national ID or passport</li>
+        <li>Passport-sized photograph</li>
+      </ul>
+      
+      <h3>Application Steps</h3>
+      <ol>
+        <li>Complete this form</li>
+        <li>Pay the application fee</li>
+        <li>Attend the entrance interview</li>
+        <li>Receive admission letter</li>
+        <li>Complete enrollment</li>
+      </ol>
+      
+      <h3>Need Help?</h3>
+      <p>Contact the admission office:</p>
+      <p><a href="mailto:admissions@heritageuniversity.edu">admissions@heritageuniversity.edu</a></p>
+      <p><a href="tel:+">+237 699999999</a></p>
+      </section>
+  </main>
+
+  <footer>
+    <!-- Footer Content -->
+     <div class="footer">
+      <div class="nn">
+      <h3>Heritage University</h3>
+      <p><em>BP 8380, Yaounde, Central Region, Cameroon +237 699999999</em></p>
+      <p><em>hehipeds@gmail.com</em></p>
+     </div>
+
+     <div class="nn">
+      <h3>Connect With Us</h3>
+          <a href="https://" target="_blank" rel="noonpener noreferrer">Facebook</a><br>
+          <a href="https://" target="_blank" rel="noonpener noreferrer">Instagram</a><br>
+          <a href="https://" target="_blank" rel="noonpener noreferrer">Twitter/X</a><br>
+          <a href="https://" target="_blank" rel="noonpener noreferrer">YouTube</a>
+     </div>
+     </div>
+     
+     <div class="hh">
+      <p>&copy; 2025 Heritage University-All rights reserved.</p>
+     </div>
+  </footer>
+  <script src="../script/script.js"></script>
+</body>
+</html>
