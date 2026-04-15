@@ -208,7 +208,6 @@ th{
 }
 
 @media only screen and (max-width: 1024px) {
-  header,
   main,
   .hero,
   .section,
@@ -220,6 +219,7 @@ th{
   }
 
   header {
+    margin: 0;
     background: rgba(255, 255, 255, 0.95);
     padding: 1rem;
   }
