@@ -8,9 +8,16 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   font-family: arial, sans-serif;
   flex-wrap: wrap;
+}
+
+header div{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 nav a{
@@ -209,6 +216,11 @@ th{
   .footer,
   footer {
     margin: 0.5rem;
+    padding: 1rem;
+  }
+
+  header {
+    background: rgba(255, 255, 255, 0.95);
     padding: 1rem;
   }
 
